@@ -9,7 +9,7 @@
 
 /* Main bar */
 window#waybar {
-    background: transparent;
+    background:  alpha(@bg, .87);
 }
 
 /* Base pill style */
