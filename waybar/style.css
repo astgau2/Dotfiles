@@ -27,7 +27,7 @@ window#waybar {
     color: @fg;
     border-radius: 6px;
     padding: 3px 12px;
-    margin: 4px 4px;
+    margin: 2px 2px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     transition: all 0.25s ease;
 }
