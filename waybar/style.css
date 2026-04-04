@@ -1,0 +1,143 @@
+@import "colors-matugen.css";
+
+/* Global font + smooth rendering */
+* {
+    font-family: "Cascadia Code", "CaskaydiaCove Nerd Font", monospace;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Main bar */
+window#waybar {
+    background: @bg;
+}
+
+/* Base pill style */
+#workspaces,
+#window,
+#clock,
+#network,
+#cpu,
+#memory,
+#disk,
+#tray,
+#custom-power,
+#pulseaudio-slider {
+    background-color: rgba(26, 27, 38, 0.9);
+    color: @fg;
+    border-radius: 14px;
+    padding: 3px 12px;
+    margin: 4px 4px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.25s ease;
+}
+
+/* Hover effect (subtle glow) */
+#workspaces:hover,
+#clock:hover,
+#network:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#custom-power:hover {
+    border: 1px solid @main;
+    box-shadow: 0 0 6px rgba(215, 186, 251, 0.3);
+}
+
+/* ---------------- WORKSPACES ---------------- */
+#workspaces {
+    padding: 0 6px;
+}
+
+#workspaces button {
+    color: @muted;
+    padding: 0 8px;
+    border-radius: 8px;
+}
+
+#workspaces button.active {
+    color: @main;
+    background-color: rgba(215, 186, 251, 0.15);
+}
+
+#workspaces button.urgent {
+    color: @error;
+}
+
+/* ---------------- CLOCK ---------------- */
+#clock {
+    color: @accent;
+    background-color: rgba(36, 40, 59, 1);
+}
+
+/* ---------------- MODULE COLORS ---------------- */
+#cpu {
+    color: #a6e3a1; /* green */
+}
+
+#memory {
+    color: #f5c2e7; /* pink */
+}
+
+#disk {
+    color: #f9e2af; /* yellow */
+}
+
+#network {
+    color: #89b4fa; /* blue */
+}
+
+/* ---------------- POWER BUTTON ---------------- */
+#custom-power {
+    color: @error;
+    padding: 0 14px;
+}
+
+#custom-power:hover {
+    background-color: rgba(255, 180, 171, 0.1);
+}
+
+/* ---------------- TOOLTIP ---------------- */
+tooltip {
+    background: @bg;
+    border: 1px solid @main;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+tooltip label {
+    color: @fg;
+}
+
+/* ---------------- AUDIO SLIDER ---------------- */
+#pulseaudio-slider {
+    padding: 0 10px;
+    min-width: 110px;
+}
+
+/* Empty bar */
+#pulseaudio-slider trough {
+    min-height: 8px;
+    border-radius: 6px;
+    background-color: @muted;
+}
+
+/* Filled bar */
+#pulseaudio-slider highlight {
+    min-height: 8px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, @main, @accent);
+}
+
+/* Hide knob */
+#pulseaudio-slider slider {
+    min-height: 0;
+    min-width: 0;
+    opacity: 0;
+}
+
+/* ---------------- WINDOW TITLE ---------------- */
+#window {
+    color: #cdd6f4;
+    font-style: italic;
+}

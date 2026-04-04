@@ -1,0 +1,78 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+    "font-family":"Caskadiyacove Nerd Font Mono Bold", 
+
+    "modules-left": [
+        "ext/workspaces",
+        "dwl/window" 
+	],
+    
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "pulseaudio/slider",
+	"network",
+        "cpu",
+        "memory",
+        "disk",
+        "tray",
+        "custom/power"
+    ],
+
+    "ext/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate"
+    },
+
+    "clock": {
+        "format": "  {:%H:%M}",
+        "format-alt": "󰃭  {:%Y-%m-%d}",
+        "on-click": "gnome-clocks"
+    },
+
+    "cpu": {
+        "format": "  {usage}%",
+        "on-click": "kitty -e btop"
+    },
+
+    "memory": {
+        "format": "  {used}GiB"
+    },
+
+    "disk": {
+        "interval": 60,
+        "format": "󰋊 {free}",
+        "on-click": "gnome-disks"
+    },
+
+    "network": {
+        "format": "󰖩  Online",
+        "format-disconnected": "󰖪  Offline",
+        "on-click": "nm-connection-editor"
+    },
+	"pulseaudio": {
+    	"format": "{icon}",
+    	"format-icons": {
+        "default": ["", "", ""]
+   	 },
+    	"on-click": "pavucontrol"
+	},
+    "custom/power": {
+        "format": "",
+        "on-click": "syspower",
+        "tooltip": false
+    } ,
+
+    "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+}
+}

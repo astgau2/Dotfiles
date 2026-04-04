@@ -1,0 +1,33 @@
+# ============================================
+# Wofi Configuration - Glass Style
+# ============================================
+
+# Dimensões e posição
+width=600
+height=90
+location=top
+orientation=vertical
+
+# Comportamento
+show=drun
+prompt=Apps.
+normal_window=false
+allow_images=true
+image_size=28
+hide_scroll=true
+
+# Busca
+matching=fuzzy
+insensitive=true
+sort_order=default
+
+# Layout
+columns=1
+lines=5
+
+# Desempenho
+cache_file=/dev/null
+
+# Desativar tema GTK - usar apenas CSS customizado
+gtk_dark=true
+no_actions=true
