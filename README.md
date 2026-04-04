@@ -1,5 +1,5 @@
 This is My Daily use setup Based on MangoWm .
-It utilizes End4's Starship, Hyprstellar by xeji0's fastfetch, A lot of Pngs kanged from tsukiyomi fetch, it utilizes MAtugen for theming, Wofi is also Chery picked from Skymebr's Glass-Rice, Rest all is me (basically nthing)
+It utilizes End4's Starship, Hyprstellar by xeji0's fastfetch, A lot of Pngs kanged from tsukiyomi fetch, it utilizes Matugen for theming, Wofi is also Chery picked from Skymebr's Glass-Rice, Rest all is me (basically nthing)
 I have Cherry Picked a lot of the things from all over the internet at this point (: 
 
 
@@ -24,3 +24,6 @@ Waybar
 <img width="1920" height="1040" alt="20260404_172009" src="https://github.com/user-attachments/assets/98edc90b-a941-4f11-a876-2ce5c15b9a9a" />
 
 Terminal Kitty
+
+
+will be adding Wlogout with config and Cava soon
