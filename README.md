@@ -27,3 +27,12 @@ Terminal Kitty
 
 
 will be adding Wlogout with config and Cava soon
+
+
+thanks once again to the creators of 
+https://github.com/end-4/dots-hyprland
+https://github.com/xeji01/hyprstellar
+https://github.com/Thunder-Blaze/tsukiyomi-fetch
+https://github.com/Skymebr/my-rice-glass
+
+note: this is just for my daily use and casual flex on unixcorn and other places, I have tons to do here and if you end up using these dotfiles and find some errors do tell me cause i may find them on a rough day lol thanks for reading this far.  
