@@ -25,7 +25,7 @@ window#waybar {
 #pulseaudio-slider {
     background-color: rgba(26, 27, 38, 0.9);
     color: @fg;
-    border-radius: 14px;
+    border-radius: 6px;
     padding: 3px 12px;
     margin: 4px 4px;
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -59,7 +59,7 @@ window#waybar {
 
 #workspaces button.active {
     color: @main;
-    background-color: rgba(215, 186, 251, 0.15);
+    background-color: rgba(215, 186, 251, 0.1);
 }
 
 #workspaces button.urgent {
