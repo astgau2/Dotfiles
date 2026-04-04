@@ -3,7 +3,7 @@
 /* Global font + smooth rendering */
 * {
     font-family: "Cascadia Code", "CaskaydiaCove Nerd Font", monospace;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -34,6 +34,8 @@ window#waybar {
 
 /* Hover effect (subtle glow) */
 #workspaces:hover,
+#window:hover,
+#pulseaudio-slider:hover,
 #clock:hover,
 #network:hover,
 #cpu:hover,
