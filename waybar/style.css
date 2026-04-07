@@ -23,7 +23,7 @@ window#waybar {
 #tray,
 #custom-power,
 #pulseaudio-slider {
-    background-color: rgba(26, 27, 38, 0.9);
+    background-color: alpha(@bg, .87;
     color: @fg;
     border-radius: 6px;
     padding: 3px 12px;
@@ -59,7 +59,7 @@ window#waybar {
 
 #workspaces button.active {
     color: @main;
-    background-color: rgba(215, 186, 251, 0.1);
+    background-color: alpha(@bg, .87);
 }
 
 #workspaces button.urgent {
