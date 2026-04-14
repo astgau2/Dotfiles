@@ -8,8 +8,8 @@ here is a preview
 
 
 
+<img width="1920" height="1080" alt="20260414_141744" src="https://github.com/user-attachments/assets/f00a09c5-b828-4aa9-a2c4-29c969bc53ff" />
 
-<img width="672" height="418" alt="20260404_172259" src="https://github.com/user-attachments/assets/0a80e879-c581-4cb0-bff6-c6fc78f8a984" />
 
 Kitty Terminal With Fastfetch, Wayabr as status Bar, Wofi for app launches
 
