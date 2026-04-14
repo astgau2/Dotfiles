@@ -13,7 +13,8 @@ here is a preview
 
 Kitty Terminal With Fastfetch, Wayabr as status Bar, Wofi for app launches
 
-<img width="1920" height="33" alt="20260404_171918" src="https://github.com/user-attachments/assets/38094b91-f262-4cbb-862e-436e53b430a7" />
+
+<img width="882" height="477" alt="image" src="https://github.com/user-attachments/assets/4891aee0-fe35-431e-8ced-ce5b873acde8" />
 
 Wofi
 
