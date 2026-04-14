@@ -1,0 +1,115 @@
+{	
+	"layer":"top",
+	"position":"top",
+	"margin": "8 8 8 8",
+	"fixed center": true,
+	"reload_style_on_change": true,
+	"height": 34,
+	"spacing": 0,
+	"font-family":"Caskadiyacove Nerd Font Mono Bold", 
+
+    	"modules-left": [
+        "ext/workspaces",
+        "dwl/window",
+	"custom/swaync",
+	"mpris"
+	],
+    
+    	"modules-center": [
+        "clock"
+    	],
+
+    	"modules-right": [
+        "pulseaudio/slider",
+	"network",
+        "cpu",
+        "memory",
+        "disk",
+        "tray",
+        "custom/power"
+    ],
+
+    "ext/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate"
+    },
+
+    "clock": {
+        "format": "  {:%H:%M}",
+        "format-alt": "󰃭  {:%Y-%m-%d}",
+        "on-click": "gnome-clocks"
+    },
+
+    "cpu": {
+        "format": "  {usage}%",
+        "on-click": "kitty -e btop"
+    },
+
+     "mpris": {
+	"format": "{player_icon} {dynamic}",
+	"format-paused": "{status_icon} <i>{dynamic}</i>",
+	"player-icons": {
+		"default": "▶",
+		"mpv": "🎵"
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+ 	},
+
+
+    "memory": {
+        "format": "  {used}GiB"
+    },
+
+    "disk": {
+        "interval": 60,
+        "format": "󰋊 {free}",
+        "on-click": "gnome-disks"
+    },
+
+    "network": {
+        "format": "󰖩  Online",
+        "format-disconnected": "󰖪  Offline",
+        "on-click": "nm-connection-editor"
+    },
+	"pulseaudio": {
+    	"format": "{icon}",
+    	"format-icons": {
+        "default": ["", "", ""]
+   	 },
+    	"on-click": "pavucontrol"
+	},
+    "custom/power": {
+        "format": "",
+        "on-click": "syspower",
+        "tooltip": false
+    } ,
+
+    "custom/swaync": {
+    "tooltip":true,     
+     "format": "",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+    },
+
+    "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+}
+}

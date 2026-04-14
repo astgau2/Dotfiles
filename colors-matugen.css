@@ -1,0 +1,14 @@
+/* Matugen generated colors */
+@define-color bg      #1a1110;
+@define-color fg      #f1dedc;
+@define-color main    #ffb3ac;
+@define-color accent  #e7bdb8;
+@define-color error   #ffb4ab;
+@define-color warn    #e1c38c;
+@define-color muted   #534341;
+
+/* Mapping for your specific config */
+@define-color work_active @main;
+@define-color cpu_color   #73332f;
+@define-color mem_color   #5d3f3c;
+@define-color net_color   #584419;

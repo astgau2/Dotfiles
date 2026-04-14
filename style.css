@@ -1,0 +1,156 @@
+@import "colors-matugen.css";
+
+/* Global font + smooth rendering */
+* {
+    font-family: "Cascadia Code", "CaskaydiaCove Nerd Font", monospace;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Main bar */
+window#waybar {
+    background: alpha(@bg, .107);
+    border-radius: 48px;
+    margin: 10px 48px 0px 48px;
+}
+
+/* Base pill style */
+#workspaces,
+#window,
+#clock,
+#network,
+#cpu,
+#memory,
+#disk,
+#tray,
+#mpris,
+#custom-swaync,
+#custom-power,
+#pulseaudio-slider {
+    background-color: alpha(@bg, .1);
+    color: @fg;
+    border-radius: 32px;
+    padding: 0px 14px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 2px solid rgba(255, 255, 255, .51);
+    transition: all 0.25s ease;
+}
+
+/* Hover effect (subtle glow) */
+#workspaces:hover,
+#window:hover,
+#pulseaudio-slider:hover,
+#clock:hover,
+#tray:hover,
+#custom-swaync:hover,
+#mpris:hover,
+#network:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#custom-power:hover {
+    border: 3px solid @main;
+    box-shadow: 0 0 6px rgba(215, 186, 251, 0.3);
+}
+
+/* ---------------- WORKSPACES ---------------- */
+#workspaces {
+    padding: 0 8px;
+    border-radius: 20px;
+}
+
+#workspaces button {
+    color: @muted;
+    padding: 0 8px;
+    border-radius: 14px;
+}
+
+#workspaces button.active {
+    color: @main;
+    background-color: alpha(@fg, .01);
+    border-radius: 14px;
+}
+
+#workspaces button.urgent {
+    color: @error;
+}
+
+/* ---------------- CLOCK ---------------- */
+#clock {
+    color: @accent;
+    background-color: alpha(@bg, .1);
+}
+
+/* ---------------- MODULE COLORS ---------------- */
+#cpu {
+    color: #a6e3a1; /* green */
+}
+
+#memory {
+    color: #f5c2e7; /* pink */
+}
+
+#disk {
+    color: #f9e2af; /* yellow */
+}
+
+#network {
+    color: #89b4fa; /* blue */
+}
+
+/* ---------------- POWER BUTTON ---------------- */
+#custom-power {
+    color: @error;
+    padding: 0 16px;
+}
+
+#custom-power:hover {
+    background-color: rgba(255, 180, 171, 0.1);
+}
+
+/* ---------------- TOOLTIP ---------------- */
+tooltip {
+    background: @bg;
+    border: 1px solid @main;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+tooltip label {
+    color: @fg;
+}
+
+/* ---------------- AUDIO SLIDER ---------------- */
+#pulseaudio-slider {
+    padding: 0 12px;
+    min-width: 110px;
+}
+
+/* Empty bar */
+#pulseaudio-slider trough {
+    min-height: 8px;
+    border-radius: 99px;
+    background-color: @muted;
+}
+
+/* Filled bar */
+#pulseaudio-slider highlight {
+    min-height: 8px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, @main, @accent);
+}
+
+/* Hide knob */
+#pulseaudio-slider slider {
+    min-height: 0;
+    min-width: 0;
+    opacity: 0;
+}
+
+/* ---------------- WINDOW TITLE ---------------- */
+#window {
+    color: #cdd6f4;
+}
